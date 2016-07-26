@@ -20,3 +20,7 @@ INSERT INTO laraweb.posts (user_id, slug, title, body, description, status, imag
   WHERE wpposts.post_type IN ('post', 'page')
         AND wpposts.post_status NOT IN ('trash', 'auto-draft')
   GROUP BY wpposts.post_name;
+
+-- TODO: Set the correct author.
+-- TODO: Format the image. Now it is like http://domain.com/wp-content/uploads/2016/07/image.png
+-- and it has to be like /images/2016/07/image.png
